@@ -4,11 +4,14 @@
     box-sizing: border-box;
 }
 :root{
-    --background:  ;
+    --header_background: radial-gradient(#fff, #31414e);
 }
 
 html{
     font-size: 62.5%;
+}
+header{
+    background: var(--header_background);
 }
 
 .container{
@@ -16,7 +19,7 @@ html{
     margin: auto;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-    background: var(--background);
+    
 }
 
 .navbar{
@@ -84,3 +87,12 @@ p{
     padding: 0.8rem 3rem;
     margin: 3rem 0;
 }
+
+main{
+    max-width: 130rem;
+    margin: auto;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    
+}
+
