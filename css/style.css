@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 :root{
     --header_background: radial-gradient(#fff, #31414e);
@@ -26,6 +29,7 @@ header{
     display: flex;
     align-items: center;
     padding: 2rem;
+
 }
 
 nav{
@@ -44,9 +48,24 @@ nav ul li{
     margin-right: 2rem;
 }
 
+.cta {
+    padding: 0.5rem 1rem;
+    border: 0.2rem solid white;
+    border-radius: 1.625rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+  }
+
+  .cta:hover{
+    padding: 0.75rem 1rem;
+    border: 0.2rem solid #ff523b;
+    transition: padding 0.5s ease 0s;
+    
+  }
+
 a{
     text-decoration: none;
-    color: #555;
+    color: rgb(197, 197, 182);
     font-size: 1.6rem;
 }
 
@@ -54,6 +73,7 @@ p{
     color:#555;
     font-size: 1.6rem
 }
+
 
 .row{
     display: flex;
