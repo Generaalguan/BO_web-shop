@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-        
     </style>
     <link rel="stylesheet" href="css/style.css">
     <title>Web-shop</title>
@@ -20,7 +19,7 @@
             <div class="navbar">
                 <div class="logo"><img src="img/noBorder.png" alt="" width="110rem"></div>
                 <nav>
-                    <ul>
+                    <ul id="menuItems">
                         <li><a href="">Home</a></li>
                         <li><a href="">Products</a></li>
                         <li><a href="">About</a></li>
@@ -29,6 +28,7 @@
                     </ul>
                 </nav>
                 <img src="img/cart.png" alt="" width="20rem" height="20rem">
+                <img src="img/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
             </div>
             <div class="row">
                 <div class="col-2">
@@ -47,9 +47,7 @@
         <section class="categories">
             <div class="small-container">
                 <div class="row">
-                    <div class="col-3">
-                        <img src="img/category-1.jpg" alt="">
-                    </div>
+                    <div class="col-3"><img src="img/category-1.jpg" alt=""></div>
                     <div class="col-3"><img src="img/category-2.jpg" alt=""></div>
                     <div class="col-3"><img src="img/category-3.jpg" alt=""></div>
                 </div>
@@ -57,7 +55,7 @@
 
         </section>
         <!--featured products-->
-        <sectionclass="small-container">
+        <section class="small-container">
             <h2 class="titel">Featured Products</h2>
             <div class="row">
                 <div class="col-4">
@@ -201,7 +199,7 @@
                 </div>
                 <div class="col-4">
                     <img src="img/product-12.jpg" alt="">
-                    <h4>Black nike sweatpants</h4>
+                    <h4>Black Nike sweatpants</h4>
                     <div class="rating">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -214,10 +212,138 @@
             </div>
 
         </section>
+        <!--Exclusive products-->
+        <section class="offer">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="img/exclusive.png" class="offer-img">
+                    </div>
+                    <div class="col-2">
+                        <p>exclusive Available on Openhire</p>
+                        <h1>Smart Band</h1>
+                        <small>The Mi Smart Band 4 features a 39.9% larger (than Mi Band 3) Amoled color full-touch
+                            display with adjustable brightness, so everything is clear as can be.
+                        </small>
+                        <br>
+                        <a href="" class="btn">Buy Now &#8594</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--testimonial-->
+        <section class="testimonial">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora explicabo nostrum excepturi
+                            iste aspernatur dolorem necessitatibus earum deleniti vitae, temporibus, adipisci error
+                            tenetur provident fuga quod molestias? Rerum, quaerat nostrum!</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <img src="img/user-1.png" alt="">
+                        <h3>Sean Parker</h3>
+                    </div>
+                    <div class="col-3"> <i class="fa fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora explicabo nostrum excepturi
+                            iste aspernatur dolorem necessitatibus earum deleniti vitae, temporibus, adipisci error
+                            tenetur provident fuga quod molestias? Rerum, quaerat nostrum!</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <img src="img/user-2.png" alt="">
+                        <h3>Micheal Dijkstra</h3>
+                    </div>
+                    <div class="col-3"> <i class="fa fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora explicabo nostrum excepturi
+                            iste aspernatur dolorem necessitatibus earum deleniti vitae, temporibus, adipisci error
+                            tenetur provident fuga quod molestias? Rerum, quaerat nostrum!</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <img src="img/user-3.png" alt="">
+                        <h3>Frits van hout</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--brands-->
+
+        <section class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="img/logo-godrej.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="img/logo-oppo.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="img/logo-coca-cola.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="img/logo-paypal.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="img/logo-philips.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
-
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download our app for android and ios mobile phone.</p>
+                    <div class="app-logo"><img src="img/play-store.png" alt=""> <img src="img/app-store.png" alt=""></div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="img/logo-white.png" alt="">
+                    <p>Our purpose is to sustainably make the pleasure and benefits of sports accessible to the many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupuns</li>
+                        <li>Blog Post</li>
+                        <li>return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022 - Bilal/Dion</p>
+        </div>
     </footer>
 
     <script src="js/main.js"></script>
