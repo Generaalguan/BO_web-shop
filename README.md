@@ -1,5 +1,11 @@
 ﻿# BO_web-shop
-## dit is een project van Bilal el Koudadi en Dion Ahiayibor
-### Van het Media college in Amsterdam, in het vierde periode van jaar 1
+## OpenHire
+### Openhire is een service waar bedrijven mensen kunnen inhuren voor hun projecten. Je kan een proffessionele portofolio maken om je goed neer te zetten voor bedrijven
 
-#### In dit project van ons gaan wij een shop maken waar je software developers kan huren, daar kan je hun portfolio bekijken en uit eindelijk huren.
+
+
+
+
+
+# [Trello](https://trello.com/invite/b/jjK7zHWs/69f2b6e769313f06a4ff397679d9e433/webshop-bcklog)
+![Wireframe](https://nano.i-stole-your.dog/p79E2Xcl)
