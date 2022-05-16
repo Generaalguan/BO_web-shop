@@ -9,4 +9,4 @@
 # [Database ](docs/openhire.pdf)
 
 # [Trello](https://trello.com/invite/b/jjK7zHWs/69f2b6e769313f06a4ff397679d9e433/webshop-bcklog)
-![wireframe](https://nano.i-stole-your.dog/p79E2Xcl)
+![wireframe](https://cdn.upload.systems/uploads/p79E2Xcl.png)
