@@ -9,6 +9,7 @@
 }
 :root{
     --header_background: radial-gradient(#fff, #31414e);
+    --menu: radial-gradient(#fff, #030405);
 }
 
 html{
@@ -374,7 +375,7 @@ ul{
         position: absolute;
         top: 7rem;
         left: 0;
-        background: #333;
+        background: black;
         width: 100%;
         overflow: hidden;
         transition: max-height 0.5s;
