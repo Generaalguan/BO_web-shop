@@ -6,4 +6,4 @@
 
 # [link naar site](http://33372.hosts1.ma-cloud.nl/Web-shop/)
 # [Trello](https://trello.com/invite/b/jjK7zHWs/69f2b6e769313f06a4ff397679d9e433/webshop-bcklog)
-![Wireframe](https://nano.i-stole-your.dog/p79E2Xcl)
+![Wireframe](https://github.com/Generaalguan/BO_web-shop/blob/main/wireframe.jpg?raw=true)
