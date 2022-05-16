@@ -142,12 +142,13 @@ header .row{
 }
 
 main{
-    max-width: 130rem;
+    max-width: 100%;
     margin: auto;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+
     
 }
+
+
 
 .categories{
     margin: 7rem 0;
@@ -218,4 +219,180 @@ h4{
 
 .col-4:hover{
     transform: translateY(-0.5rem);
+}
+
+.offer{
+    background: var(--header_background);
+    margin-top: 8rem;
+    padding: 3rem 0;
+    
+}
+
+.col-2 .offer-img{
+    padding: 5rem;
+}
+
+small{
+    color: #555;
+}
+
+.testimonial{
+    padding-top: 10rem;
+}
+
+.testimonial .col-3{
+    text-align: center;
+    padding: 4rem 2rem;
+    box-shadow: 0 0 2rem 0rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.testimonial .col-3 img{
+    width: 5rem;
+    margin-top: 2rem;
+    border-radius: 50%;
+
+}
+
+.testimonial .col-3:hover{
+    transform: translateY(-1rem);
+}
+.fa.fa-quote-left{
+    font-size: 3.4rem;
+    color: #ff523b;
+}
+
+.col-3 p{
+    font-size: 1.2rem;
+    margin: 1.2rem 0;
+    color: #555;
+}
+
+.testimonial .col-3 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 1.6rem;
+}
+
+.brands{
+    margin: 10rem auto;
+
+}
+
+.col-5{
+    width: 16rem;
+
+}
+
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.col-5 img:hover{
+    filter: grayscale(0);
+}
+
+footer{
+    background: black;
+    color: #8a8a8a;
+    font-size: 1.4rem;
+    padding: 6rem 0 2rem;
+}
+
+
+.footer p{
+    color: #8a8a8a;
+
+}
+
+.footer h3{
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 25rem;
+    margin-bottom: 2rem;
+}
+
+.footer-col-1{
+    flex-basis: 30%;
+}
+
+.footer-col-2{
+    flex:1;
+    text-align: center;
+}
+
+.footer-col-2 img{
+    width: 18rem;
+    margin-bottom: 2rem;
+}
+
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+
+}
+
+ul{
+    list-style: none;
+}
+
+.app-logo{
+    margin-top: 2rem;
+}
+
+.app-logo img{
+    width: 14rem;
+}
+
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 0.1rem;
+    margin: 2rem 0;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.menu-icon{
+    width: 2.8rem;
+    margin-left: 2rem;
+    display: none;
+}
+
+/* media query for menu */
+
+@media only screen and (max-width: 800px) {
+    nav ul{
+        position: absolute;
+        top: 7rem;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin-right: 5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    nav ul li a{
+        color: white;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    
 }
