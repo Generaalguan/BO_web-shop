@@ -9,5 +9,10 @@
 # [Database ](docs/openhire.pdf)
 
 # [Trello](https://trello.com/invite/b/jjK7zHWs/69f2b6e769313f06a4ff397679d9e433/webshop-bcklog)
+<<<<<<< HEAD
 #[Wireframe](https://nano.i-stole-your.dog/p79E2Xcl)
+=======
+>>>>>>> 564b7c517c731c106e7b9ec660a4804f3ad3f337
 
+##  Wireframe:
+![wireframe](https://cdn.upload.systems/uploads/p79E2Xcl.png)
