@@ -95,7 +95,7 @@ a{
 }
 
 p{
-    color:rgb(245, 237, 237);
+    color:black;
     font-size: 1.6rem
 }
 
@@ -183,6 +183,7 @@ main{
 
 .col-4 img {
     width: 100%;
+    border-radius: 2.5rem;
 }
 
 .titel{
