@@ -96,7 +96,11 @@ a{
 }
 
 p{
+<<<<<<< HEAD
     color:rgb(77, 77, 77);
+=======
+    color:black;
+>>>>>>> a07182ec0af2a025df5d2ba36bbba5b8166654de
     font-size: 1.6rem
 }
 
@@ -184,6 +188,7 @@ main{
 
 .col-4 img {
     width: 100%;
+    border-radius: 2.5rem;
 }
 
 .titel{
