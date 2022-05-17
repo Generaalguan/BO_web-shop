@@ -32,6 +32,7 @@ header{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
     
+    
 }
 
 .navbar{
@@ -96,7 +97,11 @@ a{
 }
 
 p{
+<<<<<<< HEAD
+    color:rgb(77, 77, 77);
+=======
     color:black;
+>>>>>>> a07182ec0af2a025df5d2ba36bbba5b8166654de
     font-size: 1.6rem
 }
 
@@ -115,7 +120,7 @@ header .row{
 .col-2{
     flex-basis: 50%;
     min-width: 30rem;
-    color: #fff;
+    color: black;
 }
 
 .col-2 img{
