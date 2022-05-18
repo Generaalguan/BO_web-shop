@@ -262,8 +262,8 @@ main{
 }
 
 .titel{
+    padding-top:8rem ;
     text-align: center;
-    margin: 0 auto 8rem;
     position: relative;
     line-height: 6rem;
     color: var(--p);
