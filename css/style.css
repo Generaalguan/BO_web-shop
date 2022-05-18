@@ -155,6 +155,9 @@ main{
     
 }
 
+.categories{
+    padding-top: 5rem;
+}
 
 
 
@@ -177,36 +180,80 @@ main{
 
 }
 
-.col-4{
-    flex-basis: 25%;
-    padding: 1rem;
-    min-width: 20rem;
-    margin-bottom: 5rem;
-    transition: transform 0.5s;
+.section-3{
+    padding: 4rem;
+    height: auto;
+    background: white;
+    display: flex;
+    align-items: center;
+
+}
+
+.arrow{
+    width: 10%;
+    background: white;
+    font-size: 300%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+.reviews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 2rem;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.review{
+    width: 35rem;
+    list-style: none;
+    padding: 4rem;
+    border-radius: 0.5rem;
+    position: relative;
+    animation-name: fadein;
+    animation-duration: 0.8s;
+
     
 }
 
-.col-4 img {
-    width: 100%;
+.review img {
+    min-width: 100%;
     height: 100%;
     border-radius: 2.5rem;
     cursor: pointer;
 }
 
-.categories{
-    position: relative;
-    padding-top: 5rem;
-    
+.review:nth-of-type(4), .review:nth-of-type(5), .review:nth-of-type(6){
+    display: none;
 }
+
+
 
 .cat-1{
     position: absolute;
     top: 15%;
-    left: 2rem;
+    left: 12.5%;
     color: white;
     font-size: 1.8rem;
     font-weight: 100;
     cursor: pointer;
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+        filter: blur(1rem);
+    }
+    to{
+        opacity: 1;
+        filter: blur(0);
+    }
 }
 
 .cat-1 p{
@@ -321,7 +368,7 @@ small{
 }
 
 footer{
-    background: black;
+    background: lightblue;
     color: #8a8a8a;
     font-size: 1.4rem;
     padding: 6rem 0 2rem;
