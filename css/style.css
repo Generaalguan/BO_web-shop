@@ -245,6 +245,11 @@ main{
     cursor: pointer;
 }
 
+.cat-1 p{
+    color: white;
+    font-size:1.5rem;
+}
+
 @keyframes fadein{
     from{
         opacity: 0;
@@ -256,9 +261,22 @@ main{
     }
 }
 
-.cat-1 p{
-    color: white;
+
+
+
+.col-4 img{
+    border-radius: 35%;
+}
+
+.cat-2 p{
     font-size:1.5rem;
+}
+
+.cat-2{
+    color: #0b1824;
+    font-size: 1.8rem;
+    font-weight: 100;
+    cursor: pointer;
 }
 
 .titel{
@@ -441,7 +459,7 @@ ul{
 
 /* media query for menu */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 50rem) {
     nav ul{
         position: absolute;
         top: 7rem;
@@ -467,4 +485,15 @@ ul{
         cursor: pointer;
     }
     
+}
+
+/*media query for categories */
+
+@media  screen and (max-width :50rem) {
+    .arrow{
+        display: none;
+    }
+    .reviews{
+        width: 100%;
+    }
 }
