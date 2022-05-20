@@ -262,12 +262,19 @@ main{
     }
 }
 
+.col-4{
+    width: 25rem;
+    max-height: 30rem;
+    padding-bottom: 3rem;
+    margin-bottom: 13rem;
+}
 
 
 
-.col-4 > a > img{
+.img_dev{
     border-radius: 35%;
-    max-width: 20rem;
+    max-width: 100%;
+    max-height:100%;
 }
 
 
@@ -308,6 +315,7 @@ h4{
     font-weight: normal;
 
 }
+
 
 
 .col-4:hover{
