@@ -42,18 +42,18 @@ header{
 
 }
 
-nav{
+.nav{
     flex:1;
     text-align: right;
 }
 
-nav ul{
+.nav ul{
     display: inline-block;
     list-style: none;
 
 }
 
-nav ul li{
+.nav ul li{
     display: inline-block;
     margin-right: 2rem;
 }
@@ -181,6 +181,7 @@ main{
 }
 
 .section-3{
+    width: 100%;
     padding: 4rem;
     height: auto;
     background: white;
@@ -190,7 +191,7 @@ main{
 }
 
 .arrow{
-    width: 10%;
+    width: 2.5%;
     background: white;
     font-size: 300%;
     outline: none;
@@ -206,7 +207,7 @@ main{
     align-items: center;
     height: 100%;
     gap: 2rem;
-    width: 80%;
+    width: 95%;
     flex-wrap: wrap;
 }
 
@@ -238,7 +239,7 @@ main{
 .cat-1{
     position: absolute;
     top: 15%;
-    left: 12.5%;
+    left: 13.5%;
     color: white;
     font-size: 1.8rem;
     font-weight: 100;
@@ -264,12 +265,15 @@ main{
 
 
 
-.col-4 img{
+.col-4 > a > img{
     border-radius: 35%;
+    max-width: 20rem;
 }
 
+
+
 .cat-2 p{
-    font-size:1.5rem;
+    font-size:1.5%;
 }
 
 .cat-2{
@@ -460,7 +464,7 @@ ul{
 /* media query for menu */
 
 @media only screen and (max-width: 50rem) {
-    nav ul{
+    .nav ul{
         position: absolute;
         top: 7rem;
         left: 0;
@@ -470,14 +474,14 @@ ul{
         transition: max-height 0.5s;
     }
 
-    nav ul li{
+    .nav ul li{
         display: block;
         margin-right: 5rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
 
-    nav ul li a{
+    .nav ul li a{
         color: white;
     }
     .menu-icon{
@@ -490,10 +494,31 @@ ul{
 /*media query for categories */
 
 @media  screen and (max-width :50rem) {
-    .arrow{
+    
+    .review{
+        width: 60%;
+    }
+
+
+
+    .cat-1{
+        position: absolute;
+        top: 16%;
+        left: 20%;
+        color: white;
+        font-size: 1.3rem;
+        font-weight: 100;
+        cursor: pointer;
+    }
+
+
+    .cat-1 p{
         display: none;
     }
-    .reviews{
-        width: 100%;
-    }
+
 }
+
+
+
+
+
