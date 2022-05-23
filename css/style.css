@@ -19,11 +19,15 @@ html{
 
 body{
     font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 header{
     background: var(--header_background);
     height: 100%;
+    max-width: 100%;
 }
 
 .container{
@@ -42,18 +46,18 @@ header{
 
 }
 
-nav{
+.nav{
     flex:1;
     text-align: right;
 }
 
-nav ul{
+.nav ul{
     display: inline-block;
     list-style: none;
 
 }
 
-nav ul li{
+.nav ul li{
     display: inline-block;
     margin-right: 2rem;
 }
@@ -181,6 +185,7 @@ main{
 }
 
 .section-3{
+    width: 100%;
     padding: 4rem;
     height: auto;
     background: white;
@@ -190,7 +195,7 @@ main{
 }
 
 .arrow{
-    width: 10%;
+    width: 2.5%;
     background: white;
     font-size: 300%;
     outline: none;
@@ -206,7 +211,7 @@ main{
     align-items: center;
     height: 100%;
     gap: 2rem;
-    width: 80%;
+    width: 95%;
     flex-wrap: wrap;
 }
 
@@ -238,7 +243,7 @@ main{
 .cat-1{
     position: absolute;
     top: 15%;
-    left: 12.5%;
+    left: 13.5%;
     color: white;
     font-size: 1.8rem;
     font-weight: 100;
@@ -261,15 +266,24 @@ main{
     }
 }
 
-
-
-
-.col-4 img{
-    border-radius: 35%;
+.col-4{
+    width: 25rem;
+    max-height: 30rem;
+    padding-bottom: 3rem;
+    margin-bottom: 13rem;
 }
 
+
+
+.img_dev{
+    border-radius: 2.5rem;
+    width: 100%;
+}
+
+
+
 .cat-2 p{
-    font-size:1.5rem;
+    font-size:1.5%;
 }
 
 .cat-2{
@@ -306,6 +320,7 @@ h4{
 }
 
 
+
 .col-4:hover{
     transform: translateY(-0.5rem);
 }
@@ -314,6 +329,7 @@ h4{
     background: var(--header_background);
     margin-top: 8rem;
     padding: 3rem 0;
+    max-width: 100%;
     
 }
 
@@ -390,6 +406,7 @@ footer{
     color: #8a8a8a;
     font-size: 1.4rem;
     padding: 6rem 0 2rem;
+    max-width: 100%;
 }
 
 
@@ -460,7 +477,7 @@ ul{
 /* media query for menu */
 
 @media only screen and (max-width: 50rem) {
-    nav ul{
+    .nav ul{
         position: absolute;
         top: 7rem;
         left: 0;
@@ -470,14 +487,14 @@ ul{
         transition: max-height 0.5s;
     }
 
-    nav ul li{
+    .nav ul li{
         display: block;
         margin-right: 5rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
 
-    nav ul li a{
+    .nav ul li a{
         color: white;
     }
     .menu-icon{
@@ -493,7 +510,53 @@ ul{
     .arrow{
         display: none;
     }
-    .reviews{
-        width: 100%;
+
+    .review{
+        width: 65%;
+    }
+
+
+
+    .cat-1{
+        position: absolute;
+        top: 16%;
+        left: 20%;
+        color: white;
+        font-size: 1.3rem;
+        font-weight: 100;
+        cursor: pointer;
+    }
+
+
+    .cat-1 p{
+        display: none;
+    }
+
+}
+
+@media  screen and (max-width :25rem){
+    .review{
+        display: none;
+    }
+
+    .review{
+        min-width: 100%;
+    }
+
+    .cat-1{
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        color: rgb(255, 255, 255);
+        font-size: 1rem;
+        font-weight: 100;
+        cursor: pointer;
+    }
+
+    .review:nth-of-type(4), .review:nth-of-type(5), .review:nth-of-type(6){
+        display: block;
     }
 }
+
+
+
