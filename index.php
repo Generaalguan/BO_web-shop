@@ -1,3 +1,15 @@
+<?php
+    require 'functions.php';
+    $connection = dbconnect();
+     
+    $result = $connection->query("SELECT * FROM `programmeurs`")
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -64,7 +76,7 @@
 
                             <li class="review">
                                 <a href="">
-                                    <img src="img/logo-design-2.jpg" width="100%" alt="">
+                                    <img src="img/logo-design-2.webp" width="100%" alt="">
                                     <div class="cat-1">
                                         <h3>Logo design</h3>
                                         <p>Let us make a logo for you</p>
@@ -76,7 +88,7 @@
 
                         <li class="review">
                             <a href="">
-                                <img src="img/translation-2x.jpg" width="100%" alt="">
+                                <img src="img/translation-2x.webp" width="100%" alt="">
                                 <div class="cat-1">
                                     <h3>Backend developer</h3>
                                     <p>Let us handle the backend for you</p>
@@ -88,7 +100,7 @@
                         
                         <li class="review">
                             <a href=""></a>
-                                <img src="img/seo-2x.jpg" width="100%" alt="">
+                                <img src="img/seo-2x.webp" width="100%" alt="">
                                 <div class="cat-1">
                                     <h3>Web developer</h3>
                                     <p>Let us make a site for you</p>
@@ -100,7 +112,7 @@
                         
                         <li class="review">
                             <a href=""></a>
-                                <img src="img/wordpress-2x.jpg" width="100%" alt="">
+                                <img src="img/wordpress-2x.webp" width="100%" alt="">
                                 <div class="cat-1">
                                     <h3>Web design</h3>
                                     <p>Let us design a site for you</p>
@@ -112,7 +124,7 @@
 
                             <li class="review">
                                 <a href="">
-                                    <img src="img/illustration-2x.jpg" width="100%" alt="">
+                                    <img src="img/illustration-2x.webp" width="100%" alt="">
                                     <div class="cat-1">
                                         <h3>illustrations</h3>
                                         <p>Let us design illustrations for you</p>
@@ -124,7 +136,7 @@
                     
                         <li class="review">
                             <a href=""></a>
-                                <img src="img/data-entry-2x.jpg" width="100%" alt="">
+                                <img src="img/data-entry-2x.webp" width="100%" alt="">
                                 <div class="cat-1">
                                     <h3>Data Gathering</h3>
                                     <p>Let us gather data for you</p>
@@ -142,7 +154,7 @@
             <div class="row">
                 <div class="col-4">
                     <a href="Dion.html" target="_blank">
-                        <img src="img/Dion.jpg" class="img_dev"  alt="">
+                        <img src="img/Dion.webp" class="img_dev"  alt="">
                         <div class="cat-2">
                             <h3>Dion ahiyabor</h3>
                             <p>A pro in Web Design</p>
@@ -152,7 +164,7 @@
                 </div>
                 <div class="col-4">
                     <a href="Bilal.html" target="_blank">
-                        <img src="img/bilal.jpg" class="img_dev" alt="">
+                        <img src="img/Bilal.webp" class="img_dev" alt="">
                         <div class="cat-2">
                             <h3>Bilal el Koudadi</h3>
                             <p>A pro in Web Development</p>
@@ -179,57 +191,25 @@
             </div>
 
         </section>
+
+
         <!--testimonial-->
-        <section class="testimonial">
-            <div class="small-container">
-                <div class="row">
-                    <div class="col-3">
-                        <i class="fa fa-quote-left"></i>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora explicabo nostrum excepturi
-                            iste aspernatur dolorem necessitatibus earum deleniti vitae, temporibus, adipisci error
-                            tenetur provident fuga quod molestias? Rerum, quaerat nostrum!</p>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-half-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
+            <section class="testimonial">
+                <div class="small-container">
+                    <div class="row">
+                    <?php foreach($result as $row): ?>
+                        <div class="col-3">
+                            <i class="fa fa-quote-left"></i>
+                            <p class="text"><?php echo $row['beschrijfing'] ?></p>
+                            
+                            <figure class="programmers-img" style="background-image: url(/f2m3bap/Web-shop/img/<?php echo $row['foto'];?>)" > </figure>
+                            <h3><?php echo $row['titel']?></h3>
                         </div>
-                        <img src="img/user-1.png" alt="">
-                        <h3>Sean Parker</h3>
-                    </div>
-                    <div class="col-3"> <i class="fa fa-quote-left"></i>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora explicabo nostrum excepturi
-                            iste aspernatur dolorem necessitatibus earum deleniti vitae, temporibus, adipisci error
-                            tenetur provident fuga quod molestias? Rerum, quaerat nostrum!</p>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-half-o"></i>
-                        </div>
-                        <img src="img/user-2.png" alt="">
-                        <h3>Micheal Dijkstra</h3>
-                    </div>
-                    <div class="col-3"> <i class="fa fa-quote-left"></i>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora explicabo nostrum excepturi
-                            iste aspernatur dolorem necessitatibus earum deleniti vitae, temporibus, adipisci error
-                            tenetur provident fuga quod molestias? Rerum, quaerat nostrum!</p>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-half-o"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <img src="img/user-3.png" alt="">
-                        <h3>Frits van hout</h3>
+                        <?php endforeach;?>
                     </div>
                 </div>
-            </div>
-        </section>
-
+            </section>
+        
         <!--brands-->
 
         <section class="brands">
