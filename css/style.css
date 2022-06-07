@@ -138,6 +138,8 @@ header .row{
     margin: 2.5rem 0;
 }
 
+
+
 .btn{
     display: inline-block;
     background: #ff523b;
@@ -181,7 +183,6 @@ main{
     margin: auto;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-
 }
 
 .section-3{
@@ -268,7 +269,6 @@ main{
 }
 
 
-
 .img_dev{
     border-radius: 2.5rem;
     width: 100%;
@@ -306,6 +306,10 @@ main{
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.title_padding{
+    padding-bottom: 8rem;
 }
 
 h4{
@@ -350,7 +354,7 @@ small{
     padding: 4rem 2rem;
     box-shadow: 0 0 2rem 0rem rgba(0, 0, 0, 0.1);
     transition: transform 0.5s;
-    min-height: 40rem;
+    min-height: 45rem;
 }
 
 
