@@ -75,7 +75,7 @@
                             <a href="logo-design.html" target="_blank">
                                 <img src="img/logo-design-2.webp" width="100%" alt="">
                                 <div class="cat-1">
-                                    <h3>Logo design</h3>
+                                    <h3>Logo designers</h3>
                                     <p>Let us make a logo for you</p>
                                 </div>
                             </a>
@@ -84,10 +84,10 @@
                         
 
                         <li class="review">
-                            <a href="translation.html" target="_blank">
+                            <a href="Backend.html" target="_blank">
                                 <img src="img/translation-2x.webp" width="100%" alt="">
                                 <div class="cat-1">
-                                    <h3>Backend developer</h3>
+                                    <h3>Backend developers</h3>
                                     <p>Let us handle the backend for you</p>
                                 </div>
                             </a>
@@ -99,7 +99,7 @@
                             <a href="web-developer.html" target="_blank">
                                 <img src="img/seo-2x.webp" width="100%" alt="">
                                 <div class="cat-1">
-                                    <h3>Web developer</h3>
+                                    <h3>Web developers</h3>
                                     <p>Let us make a site for you</p>
                                 </div>
                             </a>
@@ -108,10 +108,10 @@
 
                         
                         <li class="review">
-                            <a href="wordpress.html" target="_blank">
+                            <a href="web-design.html" target="_blank">
                                 <img src="img/wordpress-2x.webp" width="100%" alt="">
                                 <div class="cat-1">
-                                    <h3>Web design</h3>
+                                    <h3>Web designers</h3>
                                     <p>Let us design a site for you</p>
                                 </div>
                             </a>
