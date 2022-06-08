@@ -147,9 +147,28 @@
         <!--Programmers-->
         <div class="title_padding"><h2 class="titel">Our top Developpers</h2></div>
         
+        <div class="inputs">
+            <div>
+                <input id="checkbox-Back-end" type="checkbox" checked class="filter">
+                <label for="checkbox-Back-end" class="label">Back-end</label>
+            </div>
+
+            <div>
+                <input id="checkbox-front-end" type="checkbox" checked class="filter">
+                <label for="checkbox-front-end" class="label">front-end</label>
+            </div>
+
+            <div>
+                <input id="checkbox-Logo-design" type="checkbox" checked class="filter">
+                <label for="checkbox-Logo-design" class="label">Logo-design</label>
+            </div>
+
+
+        </div>
+
         <section class="small-container">
             <div class="row">
-                <div class="col-4">
+                <div data-category="Logo-design" class="col-4">
                     <a href="Dion.html" target="_blank">
                         <img src="img/Dion.webp" class="img_dev"  alt="">
                         <div class="cat-2">
@@ -159,7 +178,7 @@
                     </a>
 
                 </div>
-                <div class="col-4">
+                <div data-category="front-end" class="col-4">
                     <a href="Bilal.html" target="_blank">
                         <img src="img/Bilal.webp" class="img_dev" alt="">
                         <div class="cat-2">
@@ -199,7 +218,7 @@
                             <i class="fa fa-quote-left"></i>
                             <p class="text"><?php echo $row['beschrijving'] ?></p>
                             
-                            <figure class="programmers-img" style="background-image: url(/f2m3bap/Web-shop/img/<?php echo $row['foto'];?>)" > </figure>
+                            <figure class="programmers-img" style="background-image: url(/f2m4WEB-SHOP/Web-shop/img/<?php echo $row['foto'];?>)" > </figure>
                             <h3><?php echo $row['titel']?></h3>
                         </div>
                         <?php endforeach;?>
@@ -273,6 +292,7 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/filter.js"></script>
 </body>
 
 </html>
