@@ -4,11 +4,11 @@
 
 
 
-# [link naar site](http://33372.hosts1.ma-cloud.nl/Web-shop/)
+## [link naar site](http://33372.hosts1.ma-cloud.nl/Web-shop/)
 
-# [Database ](docs/openhire.pdf)
+## [Database ](docs/openhire.pdf)
 
-# [Trello](https://trello.com/invite/b/jjK7zHWs/69f2b6e769313f06a4ff397679d9e433/webshop-bcklog)
+## [Trello](https://trello.com/invite/b/jjK7zHWs/69f2b6e769313f06a4ff397679d9e433/webshop-bcklog)
 
 
 ##  Wireframe:
