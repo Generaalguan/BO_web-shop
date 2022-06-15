@@ -10,7 +10,7 @@
 :root{
     --header_background: radial-gradient(#cf66b6, #0b1824);
     --p: #555;
-
+    --orange: #ff523b;
 }
 
 html{
@@ -63,7 +63,7 @@ header{
 }
 
 .navcolor:hover{
-    color: #ff523b;
+    color: var(--orange);
 }
 
 .cta {
@@ -78,7 +78,7 @@ header{
 
   .cta:hover{
     padding: 0.75rem 1rem;
-    border: 0.2rem solid #ff523b;
+    border: 0.2rem solid var(--orange);
     transition: padding 0.5s ease 0s;
     border-radius: 25rem;
     transition: border-radius 0.5s ease 0s;
@@ -96,7 +96,7 @@ a{
     cursor: pointer;
 }
 .svg:hover, .icon:hover{
-    color: #ff523b;
+    color: var(--orange);
 
 }
 
@@ -142,7 +142,7 @@ header .row{
 
 .btn{
     display: inline-block;
-    background: #ff523b;
+    background: var(--orange);
     color: white;
     border-radius: 30px;
     padding: 0.8rem 3rem;
@@ -333,7 +333,7 @@ main{
 
 .titel::after{
     content: '';
-    background: #ff523b;
+    background: var(--orange);
     width: 8rem;
     height: 0.5rem;
     border-radius: 0.5rem;
@@ -398,7 +398,7 @@ small{
 }
 .fa.fa-quote-left{
     font-size: 3.4rem;
-    color: #ff523b;
+    color: var(--orange);
 }
 
 .programmers-img  {

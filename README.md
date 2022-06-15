@@ -1,6 +1,6 @@
 ﻿# BO_web-shop
 ## OpenHire
-#### Openhire is een service waar bedrijven developers kunnen inhuren voor hun projecten. Je kan een proffessionele portofolio maken om je goed neer te zetten voor bedrijven
+#### Openhire is een service waar bedrijven developers kunnen inhuren voor hun projecten. Je kan een proffessionele portofolio maken om je goed neer te zetten voor bedrijven.
 
 
 

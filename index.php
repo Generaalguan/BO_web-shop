@@ -30,8 +30,6 @@
                 <a class="logo" href="index.php"><img src="img/noBorder.png" alt="" width="145rem"></a>
                 <nav class="nav">
                     <ul id="menuItems">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Products</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Account</a></li>
                         <li><a class="cta" href="">Contact</a></li>
@@ -220,6 +218,7 @@
                             
                             <figure class="programmers-img" style="background-image: url(/f2m4WEB-SHOP/Web-shop/img/<?php echo $row['foto'];?>)" > </figure>
                             <h3><?php echo $row['titel']?></h3>
+                            <a target="blanck" href="details.php?id=<?php echo $row['id']; ?>" class="btn">More info</a>
                         </div>
                         <?php endforeach;?>
                     </div>
