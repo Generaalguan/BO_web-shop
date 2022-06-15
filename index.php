@@ -69,6 +69,15 @@
             <button class="arrow"><</button>
                     <ul class="reviews">
 
+<<<<<<< HEAD:index.php
+                            <li class="review">
+                                <a href="">
+                                    <img src="img/logo-design-2.webp" width="100%" alt="">
+                                    <div class="cat-1">
+                                        <h3>Logo design</h3>
+                                        <p>Let us make a logo for you</p>
+                                    </div>
+=======
                         <li class="review">
                             <a href="logo-design.html" target="_blank">
                                 <img src="img/logo-design-2.webp" width="100%" alt="">
@@ -76,13 +85,18 @@
                                     <h3>Logo designers</h3>
                                     <p>Let us make a logo for you</p>
                                 </div>
+>>>>>>> 4c1e433b8c6060f217a1c7ed2ae359ac73c77381:index.html
                             </a>
                         </li>
 
                         
 
                         <li class="review">
+<<<<<<< HEAD:index.php
+                            <a href="">
+=======
                             <a href="Backend.html" target="_blank">
+>>>>>>> 4c1e433b8c6060f217a1c7ed2ae359ac73c77381:index.html
                                 <img src="img/translation-2x.webp" width="100%" alt="">
                                 <div class="cat-1">
                                     <h3>Backend developers</h3>
@@ -94,7 +108,11 @@
 
                         
                         <li class="review">
+<<<<<<< HEAD:index.php
+                            <a href=""></a>
+=======
                             <a href="web-developer.html" target="_blank">
+>>>>>>> 4c1e433b8c6060f217a1c7ed2ae359ac73c77381:index.html
                                 <img src="img/seo-2x.webp" width="100%" alt="">
                                 <div class="cat-1">
                                     <h3>Web developers</h3>
@@ -106,7 +124,11 @@
 
                         
                         <li class="review">
+<<<<<<< HEAD:index.php
+                            <a href=""></a>
+=======
                             <a href="web-design.html" target="_blank">
+>>>>>>> 4c1e433b8c6060f217a1c7ed2ae359ac73c77381:index.html
                                 <img src="img/wordpress-2x.webp" width="100%" alt="">
                                 <div class="cat-1">
                                     <h3>Web designers</h3>
@@ -118,7 +140,11 @@
 
 
                             <li class="review">
+<<<<<<< HEAD:index.php
+                                <a href="">
+=======
                                 <a href="illustration.html" target="_blank">
+>>>>>>> 4c1e433b8c6060f217a1c7ed2ae359ac73c77381:index.html
                                     <img src="img/illustration-2x.webp" width="100%" alt="">
                                     <div class="cat-1">
                                         <h3>illustrations</h3>
@@ -130,7 +156,11 @@
 
                     
                         <li class="review">
+<<<<<<< HEAD:index.php
+                            <a href=""></a>
+=======
                             <a href="data-entry.html" target="_blank">
+>>>>>>> 4c1e433b8c6060f217a1c7ed2ae359ac73c77381:index.html
                                 <img src="img/data-entry-2x.webp" width="100%" alt="">
                                 <div class="cat-1">
                                     <h3>Data Gathering</h3>
@@ -166,6 +196,9 @@
 
         <section class="small-container">
             <div class="row">
+<<<<<<< HEAD:index.php
+                <div class="col-4">
+=======
                 <div data-category="Logo-design" class="col-4">
                     <a href="Dion.html" target="_blank">
                         <img src="img/Dion.webp" class="img_dev"  alt="">
@@ -184,7 +217,18 @@
                             <p>A pro in Development</p>
                         </div>
                     </a>
+>>>>>>> 4c1e433b8c6060f217a1c7ed2ae359ac73c77381:index.html
 
+                    <section class="programmers" >
+            
+                        <?php foreach($result as $row): ?>
+                            <article class="programmer">
+                                <h2 class="naam"><?php echo $row['titel'] ?></h2>
+                                <figure class="programmers-img" style="background-image: url(img/<?php echo $row['foto'];?>)" > </figure>
+                                <p class="text"><?php echo $row['beschrijfing'] ?></p>
+                            </article>
+                        <?php endforeach;?>
+                    </section>
                 </div>
             </div>
         </section>
