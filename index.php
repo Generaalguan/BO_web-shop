@@ -1,3 +1,15 @@
+<?php
+    require 'functions.php';
+    $connection = dbconnect();
+     
+    $result = $connection->query("SELECT * FROM `programmeurs`")
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -64,7 +76,7 @@
 
                             <li class="review">
                                 <a href="">
-                                    <img src="img/logo-design-2.jpg" width="100%" alt="">
+                                    <img src="img/logo-design-2.webp" width="100%" alt="">
                                     <div class="cat-1">
                                         <h3>Logo design</h3>
                                         <p>Let us make a logo for you</p>
@@ -76,7 +88,7 @@
 
                         <li class="review">
                             <a href="">
-                                <img src="img/translation-2x.jpg" width="100%" alt="">
+                                <img src="img/translation-2x.webp" width="100%" alt="">
                                 <div class="cat-1">
                                     <h3>Backend developer</h3>
                                     <p>Let us handle the backend for you</p>
@@ -88,7 +100,7 @@
                         
                         <li class="review">
                             <a href=""></a>
-                                <img src="img/seo-2x.jpg" width="100%" alt="">
+                                <img src="img/seo-2x.webp" width="100%" alt="">
                                 <div class="cat-1">
                                     <h3>Web developer</h3>
                                     <p>Let us make a site for you</p>
@@ -100,7 +112,7 @@
                         
                         <li class="review">
                             <a href=""></a>
-                                <img src="img/wordpress-2x.jpg" width="100%" alt="">
+                                <img src="img/wordpress-2x.webp" width="100%" alt="">
                                 <div class="cat-1">
                                     <h3>Web design</h3>
                                     <p>Let us design a site for you</p>
@@ -112,7 +124,7 @@
 
                             <li class="review">
                                 <a href="">
-                                    <img src="img/illustration-2x.jpg" width="100%" alt="">
+                                    <img src="img/illustration-2x.webp" width="100%" alt="">
                                     <div class="cat-1">
                                         <h3>illustrations</h3>
                                         <p>Let us design illustrations for you</p>
@@ -124,7 +136,7 @@
                     
                         <li class="review">
                             <a href=""></a>
-                                <img src="img/data-entry-2x.jpg" width="100%" alt="">
+                                <img src="img/data-entry-2x.webp" width="100%" alt="">
                                 <div class="cat-1">
                                     <h3>Data Gathering</h3>
                                     <p>Let us gather data for you</p>
@@ -141,24 +153,17 @@
         <section class="small-container">
             <div class="row">
                 <div class="col-4">
-                    <a href="Dion.html" target="_blank">
-                        <img src="img/Dion.jpg" class="img_dev"  alt="">
-                        <div class="cat-2">
-                            <h3>Dion ahiyabor</h3>
-                            <p>A pro in Web Design</p>
-                        </div>
-                    </a>
 
-                </div>
-                <div class="col-4">
-                    <a href="Bilal.html" target="_blank">
-                        <img src="img/bilal.jpg" class="img_dev" alt="">
-                        <div class="cat-2">
-                            <h3>Bilal el Koudadi</h3>
-                            <p>A pro in Web Development</p>
-                        </div>
-                    </a>
-
+                    <section class="programmers" >
+            
+                        <?php foreach($result as $row): ?>
+                            <article class="programmer">
+                                <h2 class="naam"><?php echo $row['titel'] ?></h2>
+                                <figure class="programmers-img" style="background-image: url(img/<?php echo $row['foto'];?>)" > </figure>
+                                <p class="text"><?php echo $row['beschrijfing'] ?></p>
+                            </article>
+                        <?php endforeach;?>
+                    </section>
                 </div>
             </div>
         </section>

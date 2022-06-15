@@ -267,6 +267,7 @@ main{
 }
 
 .col-4{
+    padding-top: 8rem;
     width: 25rem;
     max-height: 30rem;
     padding-bottom: 3rem;
@@ -482,7 +483,7 @@ ul{
         position: absolute;
         top: 7rem;
         left: 0;
-        background: black;
+        background: rgba(34, 18, 45, 0.3);
         width: 100%;
         overflow: hidden;
         transition: max-height 0.5s;
@@ -509,7 +510,7 @@ ul{
 
 @media  screen and (max-width :50rem) {
     .arrow{
-        display: none;
+        display: block;
     }
 
     .review{
@@ -536,6 +537,9 @@ ul{
 }
 
 @media  screen and (max-width :25rem){
+    .arrow{
+        display: none;
+    }
     .review{
         display: none;
     }
@@ -554,7 +558,7 @@ ul{
         cursor: pointer;
     }
 
-    .review:nth-of-type(4), .review:nth-of-type(5), .review:nth-of-type(6){
+    .review:nth-of-type(1), .review:nth-of-type(2), .review:nth-of-type(3), .review:nth-of-type(4), .review:nth-of-type(5), .review:nth-of-type(6){
         display: block;
     }
 }
