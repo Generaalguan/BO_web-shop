@@ -361,10 +361,14 @@ h4{
 }
 
 .offer{
+    max-height: 20rem;
     background: var(--header_background);
     margin-top: 8rem;
     padding: 3rem 0;
     max-width: 100%;
+    padding-bottom: 15rem;
+    padding-top: 5rem;
+
     
 }
 
@@ -408,6 +412,33 @@ small{
     border-radius: 99%;
 }
 
+.speech{
+    margin-left: 70rem;
+
+}
+
+.hide {
+    display: none;
+  }
+  #result {
+    margin-top: 2em;
+    background: #EF476F;
+    border-radius: 10px;
+    padding: 1rem;
+    color: #fff;
+  }
+
+  button {
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    background: var(--orange);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+  }
+
 .col-3 p{
     font-size: 1.2rem;
     margin: 1.2rem 0;
@@ -441,7 +472,7 @@ small{
 }
 
 footer{
-    background: lightblue;
+    background: var(--header_background);
     color: #8a8a8a;
     font-size: 1.4rem;
     padding: 6rem 0 2rem;
@@ -493,25 +524,78 @@ ul{
 }
 
 .app-logo img{
-    width: 14rem;
+    max-width: 4rem;
 }
 
-.footer hr{
-    border: none;
-    background: #b5b5b5;
-    height: 0.1rem;
-    margin: 2rem 0;
+.footer{
+    padding: 40px 0;
+    background-color: #fff;
+    font-weight: 400;
+    font-size:x-large;
 }
 
-.copyright{
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: inherit;
+}
+
+.fab:hover{
+    color: var(--orange);
+}
+
+.footer .social a {
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.footer .social a:hover{
+    opacity: 0.9s;
+
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
     text-align: center;
 }
 
-.menu-icon{
-    width: 2.8rem;
-    margin-left: 2rem;
-    display: none;
+.footer ul li a {
+    color: rgb(175, 175, 175);
+    text-decoration: none;
+    opacity: 0.8;
 }
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+
+}
+
+.footer ul li a:hover{
+    opacity: 1;
+    color: var(--orange);
+}
+
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font: size 13px;
+    color: #aaa;
+}
+
 
 /* media query for menu */
 

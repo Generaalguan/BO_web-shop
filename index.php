@@ -18,6 +18,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css?v=<?php echo time()?>">
     <title>Web-shop</title>
 </head>
@@ -69,15 +70,6 @@
             <button class="arrow"><</button>
                     <ul class="reviews">
 
-<<<<<<< HEAD:index.php
-                            <li class="review">
-                                <a href="">
-                                    <img src="img/logo-design-2.webp" width="100%" alt="">
-                                    <div class="cat-1">
-                                        <h3>Logo design</h3>
-                                        <p>Let us make a logo for you</p>
-                                    </div>
-=======
                         <li class="review">
                             <a href="logo-design.html" target="_blank">
                                 <img src="img/logo-design-2.webp" width="100%" alt="">
@@ -85,18 +77,13 @@
                                     <h3>Logo designers</h3>
                                     <p>Let us make a logo for you</p>
                                 </div>
->>>>>>> 4c1e433b8c6060f217a1c7ed2ae359ac73c77381:index.html
                             </a>
                         </li>
 
                         
 
                         <li class="review">
-<<<<<<< HEAD:index.php
-                            <a href="">
-=======
                             <a href="Backend.html" target="_blank">
->>>>>>> 4c1e433b8c6060f217a1c7ed2ae359ac73c77381:index.html
                                 <img src="img/translation-2x.webp" width="100%" alt="">
                                 <div class="cat-1">
                                     <h3>Backend developers</h3>
@@ -108,11 +95,7 @@
 
                         
                         <li class="review">
-<<<<<<< HEAD:index.php
-                            <a href=""></a>
-=======
                             <a href="web-developer.html" target="_blank">
->>>>>>> 4c1e433b8c6060f217a1c7ed2ae359ac73c77381:index.html
                                 <img src="img/seo-2x.webp" width="100%" alt="">
                                 <div class="cat-1">
                                     <h3>Web developers</h3>
@@ -124,11 +107,7 @@
 
                         
                         <li class="review">
-<<<<<<< HEAD:index.php
-                            <a href=""></a>
-=======
                             <a href="web-design.html" target="_blank">
->>>>>>> 4c1e433b8c6060f217a1c7ed2ae359ac73c77381:index.html
                                 <img src="img/wordpress-2x.webp" width="100%" alt="">
                                 <div class="cat-1">
                                     <h3>Web designers</h3>
@@ -140,11 +119,7 @@
 
 
                             <li class="review">
-<<<<<<< HEAD:index.php
-                                <a href="">
-=======
                                 <a href="illustration.html" target="_blank">
->>>>>>> 4c1e433b8c6060f217a1c7ed2ae359ac73c77381:index.html
                                     <img src="img/illustration-2x.webp" width="100%" alt="">
                                     <div class="cat-1">
                                         <h3>illustrations</h3>
@@ -156,11 +131,7 @@
 
                     
                         <li class="review">
-<<<<<<< HEAD:index.php
-                            <a href=""></a>
-=======
                             <a href="data-entry.html" target="_blank">
->>>>>>> 4c1e433b8c6060f217a1c7ed2ae359ac73c77381:index.html
                                 <img src="img/data-entry-2x.webp" width="100%" alt="">
                                 <div class="cat-1">
                                     <h3>Data Gathering</h3>
@@ -196,9 +167,6 @@
 
         <section class="small-container">
             <div class="row">
-<<<<<<< HEAD:index.php
-                <div class="col-4">
-=======
                 <div data-category="Logo-design" class="col-4">
                     <a href="Dion.html" target="_blank">
                         <img src="img/Dion.webp" class="img_dev"  alt="">
@@ -217,18 +185,6 @@
                             <p>A pro in Development</p>
                         </div>
                     </a>
->>>>>>> 4c1e433b8c6060f217a1c7ed2ae359ac73c77381:index.html
-
-                    <section class="programmers" >
-            
-                        <?php foreach($result as $row): ?>
-                            <article class="programmer">
-                                <h2 class="naam"><?php echo $row['titel'] ?></h2>
-                                <figure class="programmers-img" style="background-image: url(img/<?php echo $row['foto'];?>)" > </figure>
-                                <p class="text"><?php echo $row['beschrijfing'] ?></p>
-                            </article>
-                        <?php endforeach;?>
-                    </section>
                 </div>
             </div>
         </section>
@@ -236,16 +192,11 @@
         <!--Exclusive products-->
         <section class="offer">
             <div class="small-container">
-                <div class="row">
-                    <div class="col-2">
-                        <img src="img/background.jpg" class="offer-img">
-                    </div>
-                    <div class="col-2">
-                        <h1>Our couse</h1>
-                        <h2>Easy to have contact</h2>
-                        <p>Using our site makes it easier, <br> to make and have contact with the developers that we hire out</p>
-                    </div>
-                </div>
+            <div class="speech"> 
+                <button id="button1" onclick="startRecognition()">🎤</button>
+                <div id="result" class="hide"></div>
+                <div><img id="image1" class="hide"></div>
+            </div>
             </div>
 
         </section>
@@ -295,47 +246,30 @@
 
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="footer-col-1">
-                    <h3>Download our App</h3>
-                    <p>Download our app for android and ios mobile phone.</p>
-                    <div class="app-logo"><img src="img/play-store.png" alt=""> <img src="img/app-store.png" alt="">
-                    </div>
-                </div>
-                <div class="footer-col-2">
-                    <img src="img/noBorder.png" alt="">
-                    <p>Our purpose is to sustainably make the pleasure and benefits of hiring Programmers accessible to
-                        the many.
-                    </p>
-                </div>
-                <div class="footer-col-3">
-                    <h3>Useful Links</h3>
-                    <ul>
-                        <li>contacts</li>
-                        <li>Blog Post</li>
-                        <li>return Policy</li>
-                        <li>Join our cause</li>
-                    </ul>
-                </div>
-                <div class="footer-col-4">
-                    <h3>Follow us</h3>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                        <li>Instagram</li>
-                        <li>Youtube</li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-            <p class="copyright">Copyright 2022 - Bilal/Dion</p>
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
         </div>
+
+        <ul class="list">
+          <li>
+            <a href="#">Home</a>
+          </li>  
+          <li>
+            <a href="#">Services</a>
+          </li>  
+          <li>
+            <a href="#">contact</a>
+          </li>  
+        </ul>
+        <p class="copyright"> Dion Ahiayibor & Bilal el Koudadi @ 2022</p>
     </footer>
 
     <script src="js/main.js"></script>
     <script src="js/filter.js"></script>
+    <script src="js/speech.js"></script>
 </body>
 
 </html>
