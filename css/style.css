@@ -513,6 +513,50 @@ ul{
     display: none;
 }
 
+/*contact */
+
+h1{
+    font-size: 5rem;
+    line-height: 6rem;
+    margin: 2.5rem 0;
+    text-align: center;
+}
+
+.form-container{
+    background: var(--header_background);
+    padding-top: 5rem;
+    padding-left: 25rem;
+    padding-right: 25rem;
+}
+
+.form-field{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+
+}
+.form-label{
+    font-size: 150%;
+    font-weight: 600;
+}
+
+.form-input{
+    min-height:6rem ;
+}
+
+.form-error{
+    color: white;
+    background-color: var(--orange);
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem; 
+}
+
+textarea{
+    resize: none;
+}
+
 /* media query for menu */
 
 @media only screen and (max-width: 50rem) {
