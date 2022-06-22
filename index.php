@@ -32,7 +32,7 @@
                     <ul id="menuItems">
                         <li><a href="">About</a></li>
                         <li><a href="">Account</a></li>
-                        <li><a class="cta" href="contact.php">Contact</a></li>
+                        <li><a class="cta" target="blanck" href="contact.php">Contact</a></li>
                     </ul>
                 </nav>
 
