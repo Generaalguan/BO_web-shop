@@ -37,8 +37,8 @@
                         <div class="col-3">
                             <i class="fa fa-quote-left"></i>
                             <h3><?php echo $place['titel'] ?></h3>
-                            <figure class="programmers-img" style="background-image: url(/F2M4WEB-SHOP/database/img/<?php echo $place['foto'];?>)" > </figure>
-                            <p class="text"><?php echo $place['grote_beschrijving'] ?></p>
+                            <figure class="programmers-img" style="background-image: url(/F2M4WEB-SHOP/Web-Shop/img/<?php echo $place['foto'];?>)" > </figure>
+                            <p class="text"><?php echo $place['grote-beschrijving'] ?></p>
                         </div>
 
                     </div>
