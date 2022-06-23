@@ -31,8 +31,8 @@
                 <a class="logo" href="index.php"><img src="img/noBorder.png" alt="" width="145rem"></a>
                 <nav class="nav">
                     <ul id="menuItems">
-                        <li><a href="">About</a></li>
-                        <li><a href="">Account</a></li>
+                        <li><a href="#search">Search</a></li>
+                        <li><a href="#categories">Categories</a></li>
                         <li><a class="cta" href="">Contact</a></li>
                     </ul>
                 </nav>
@@ -64,7 +64,7 @@
             </div>
 
         </section>
-        <h2 class="titel">Categories</h2>
+        <h2 id="categories" class="titel">Categories</h2>
         <section class="section-3">
 
             <button class="arrow"><</button>
@@ -190,7 +190,7 @@
         </section>
 
         <!--Exclusive products-->
-        <section class="offer">
+        <section id="search" class="offer">
             <div class="small-container">
             <div class="speech"> 
                 <button id="button1" onclick="startRecognition()">🎤</button>
@@ -254,13 +254,13 @@
         </div>
 
         <ul class="list">
-          <li>
+          <li class="u-list">
             <a href="#">Home</a>
           </li>  
-          <li>
+          <li class="u-list">
             <a href="#">Services</a>
           </li>  
-          <li>
+          <li class="u-list">
             <a href="#">contact</a>
           </li>  
         </ul>
