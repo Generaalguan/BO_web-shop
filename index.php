@@ -31,7 +31,7 @@
                 <nav class="nav">
                     <ul id="menuItems">
                         <li><a href="">About</a></li>
-                        <li><a href="">Account</a></li>
+                        <li><a href="#search">search</a></li>
                         <li><a class="cta" target="blanck" href="contact.php">Contact</a></li>
                     </ul>
                 </nav>
@@ -44,7 +44,7 @@
                     <h1>Find the perfect person, <br> for your business!</h1>
                     <p>OpenHire aims to make it easier for businesses to look for freelancers they can hire for their
                         projects</p>
-                    <a href="" class="btn">Explore Now &#8594;</a>
+                    <a href="#devs" class="btn">Explore Now &#8594;</a>
                 </div>
                 <div class="col-2"><img src="img/laptop.png" alt=""></div>
             </div>
@@ -143,7 +143,7 @@
                     <button class="arrow">></button>
         </section>
         <!--Programmers-->
-        <div class="title_padding"><h2 class="titel">Our top Developpers</h2></div>
+        <div class="title_padding"><h2 id="devs" class="titel">Our top Developpers</h2></div>
         
         <div class="inputs">
             <div>
