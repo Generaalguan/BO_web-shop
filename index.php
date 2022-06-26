@@ -179,7 +179,7 @@
                 </div>
                 <div data-category="front-end" class="col-4 ">
                     <a href="Bilal.html" target="_blank" >
-                        <img src="img/bilal.webp" class="img_dev" alt="">
+                        <img src="img/Bilal.webp" class="img_dev" alt="">
                         <div class="cat-2">
                             <h3>Bilal el Koudadi</h3>
                             <p>A pro in Development</p>
