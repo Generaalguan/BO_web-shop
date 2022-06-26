@@ -30,6 +30,7 @@ function isValidEmail($value){
     return false;
    }
    $valid = filter_var($cleaned, FILTER_VALIDATE_EMAIL);
+   return $valid;
    
 }
 

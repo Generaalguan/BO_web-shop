@@ -99,7 +99,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
 
             <div class="form-field">
                 <label class="form-label" for="bericht">mesage</label>
-                <textarea class="form-input" type="text"  id="bericht" name="bericht" placeholder="Your mesage" required> <?php echo $bericht; ?></textarea>
+                <textarea class="form-input" type="text"  id="bericht" name="bericht" placeholder="Your mesage" required><?php echo $bericht; ?></textarea>
 
                 <?php  if(!empty($errors['bericht'])):?>
                 <p class="form-error"><?php echo $errors['bericht'] ?></p>

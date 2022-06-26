@@ -167,8 +167,8 @@
 
         <section class="small-container">
             <div class="row">
-                <div data-category="Logo-design" class="col-4">
-                    <a href="Dion.html" target="_blank">
+                <div data-category="Logo-design" class="col-4 ">
+                    <a href="Dion.html" target="_blank" >
                         <img src="img/Dion.webp" class="img_dev"  alt="">
                         <div class="cat-2">
                             <h3>Dion ahiyabor</h3>
@@ -177,9 +177,9 @@
                     </a>
 
                 </div>
-                <div data-category="front-end" class="col-4">
-                    <a href="Bilal.html" target="_blank">
-                        <img src="img/Bilal.webp" class="img_dev" alt="">
+                <div data-category="front-end" class="col-4 ">
+                    <a href="Bilal.html" target="_blank" >
+                        <img src="img/bilal.webp" class="img_dev" alt="">
                         <div class="cat-2">
                             <h3>Bilal el Koudadi</h3>
                             <p>A pro in Development</p>
@@ -193,6 +193,7 @@
         <section id="search" class="offer">
             <div class="small-container">
             <div class="speech"> 
+                <h3>Have a question, simply ask by klicking the button &#8594;</h3>
                 <button id="button1" onclick="startRecognition()">🎤</button>
                 <div id="result" class="hide"></div>
                 <div><img id="image1" class="hide"></div>
@@ -211,7 +212,7 @@
                             <i class="fa fa-quote-left"></i>
                             <p class="text"><?php echo $row['beschrijving'] ?></p>
                             
-                            <figure class="programmers-img" style="background-image: url(/f2m4WEB-SHOP/Web-shop/img/<?php echo $row['foto'];?>)" > </figure>
+                            <figure class="programmers-img" style="background-image: url(img/<?php echo $row['foto'];?>)" > </figure>
                             <h3><?php echo $row['titel']?></h3>
                             <a target="blanck" href="details.php?id=<?php echo $row['id']; ?>" class="btn">More info</a>
                         </div>
