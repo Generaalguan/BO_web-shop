@@ -43,20 +43,19 @@ actionSpeech = (speechText) => {
   switch(speechText){ 
     // switch evaluates using stric comparison, ===
     case "backend":
-      window.open(".html", "_self")
+      window.open("backend.html", "_self")
       break;
     case  "frontend":
-      window.open(".html", "_self")
+      window.open("web-developer.html", "_self")
       break;
-    case "image": // let op, "fall-through"
     case "design": // let op, "fall-through"
-      window.open("test.html", "_self")
+      window.open("logo-design.html", "_self")
       break;
     case "top":
       window.open("#header", "_self");
       break;
     case "help me":
-      alert("Valid speech commands: frontend,  backend, design, page");
+      alert("Valid speech commands: frontend,  backend, design, top, help me");
       break;
     default:
       // do nothing yet

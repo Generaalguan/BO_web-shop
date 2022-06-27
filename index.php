@@ -193,7 +193,7 @@
         <section id="search" class="offer">
             <div class="small-container">
             <div class="speech"> 
-                <h3>Have a question, simply ask by klicking the button &#8594;</h3>
+                <h3>Have a question, simply ask by clicking the button &#8594;</h3>
                 <button id="button1" onclick="startRecognition()">🎤</button>
                 <div id="result" class="hide"></div>
                 <div><img id="image1" class="hide"></div>
