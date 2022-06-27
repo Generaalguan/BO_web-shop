@@ -42,6 +42,7 @@ actionSpeech = (speechText) => {
   console.log(speechText); // debug 
   switch(speechText){ 
     // switch evaluates using stric comparison, ===
+<<<<<<< HEAD
     case "backend":
       window.open("backend.html", "_self")
       break;
@@ -50,10 +51,23 @@ actionSpeech = (speechText) => {
       break;
     case "design": // let op, "fall-through"
       window.open("logo-design.html", "_self")
+=======
+    case "back end":
+      window.open("backend.html", "_self")
+      break;
+    case  "front end":
+      window.open("web-developer.html", "_self")
+      break;
+    case "design": // let op, "fall-through"
+      window.open("illustration.html", "_self")
+>>>>>>> 915bde1d16a9cfff919dd9bf8f76927d75aee43c
       break;
     case "top":
       window.open("#header", "_self");
       break;
+    case "data":
+      window.open("data-entry.html", "_self");
+      break;  
     case "help me":
       alert("Valid speech commands: frontend,  backend, design, top, help me");
       break;

@@ -194,7 +194,11 @@
             <div class="small-container">
             <div class="speech"> 
                 <h3>Have a question, simply ask by clicking the button &#8594;</h3>
+<<<<<<< HEAD
                 <button id="button1" onclick="startRecognition()">🎤</button>
+=======
+                <button class="button" id="button1" onclick="startRecognition()">🎤</button>
+>>>>>>> 915bde1d16a9cfff919dd9bf8f76927d75aee43c
                 <div id="result" class="hide"></div>
                 <div><img id="image1" class="hide"></div>
             </div>
