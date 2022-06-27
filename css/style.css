@@ -14,7 +14,7 @@
 }
 
 html{
-    font-size: 62.5%;   
+    font-size: 62.5%;  
     scroll-behavior: smooth;
 }
 
@@ -119,6 +119,7 @@ header .row{
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+    
 
 }
 
@@ -140,6 +141,12 @@ header .row{
 }
 
 
+.speech{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 3rem;
+}
 
 .btn{
     display: inline-block;
@@ -225,7 +232,7 @@ main{
     position: relative;
     animation-name: fadein;
     animation-duration: 0.8s;
-
+    
     
 }
 
@@ -262,11 +269,13 @@ main{
     }
 }
 
+
 .col-4{
     width: 25rem;
     max-height: 30rem;
     padding-bottom: 3rem;
     margin-bottom: 13rem;
+    
 }
 
 .inputs{
@@ -378,6 +387,15 @@ small{
 
 }
 
+.button{
+    border-radius: 2rem ;
+    width: 4rem;
+}
+
+.button:hover{
+    color: var(--orange);
+}
+
 .testimonial{
     padding-top: 10rem;
 }
@@ -445,64 +463,45 @@ footer{
     background: var(--header_background);
     color: #8a8a8a;
     font-size: 1.4rem;
-    padding: 5rem 0rem 0rem 50rem;
+    padding: 5rem 0rem 0rem 5rem;
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 
 .footer p{
     color: #8a8a8a;
-
+    padding:2rem;
 }
 
-.footer h3{
-    color: #fff;
-    margin-bottom: 2rem;
+hr{
+    width: 80%;
+    background: var(--p);
 }
 
-.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
-    min-width: 25rem;
-    margin-bottom: 2rem;
+.fab{
+    height: 3rem;
+    width: 3rem;
+    font-size: 2.25rem;
+    transition: 0.8s;
 }
 
-.footer-col-1{
-    flex-basis: 30%;
-}
-
-.footer-col-2{
-    flex:1;
-    text-align: center;
-}
-
-.footer-col-2 img{
-    width: 18rem;
-    margin-bottom: 2rem;
-}
-
-.footer-col-3, .footer-col-4{
-    flex-basis: 12%;
-    text-align: center;
-
+.fab:hover{
+    color: var(--orange);
 }
 
 ul{
     list-style: none;
 }
 
-.app-logo{
-    margin-top: 2rem;
+.list{
+    padding: 0rem 0rem 1rem 0rem;
 }
 
-.app-logo img{
-    width: 14rem;
-}
-
-.footer hr{
-    border: none;
-    background: #b5b5b5;
-    height: 0.1rem;
-    margin: 2rem 0;
-}
 
 .copyright{
     text-align: center;
@@ -558,7 +557,20 @@ textarea{
     resize: none;
 }
 
+.thx{
+    background: var(--header_background);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+.asap{
+    font-size: 250%;
+    font-weight: 300;
+    text-align: center;
+}
 
 /* media query for menu */
 
@@ -618,6 +630,13 @@ textarea{
         display: none;
     }
 
+    .form-container{
+        background: var(--header_background);
+        padding-top: 5rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
 }
 
 @media  screen and (max-width :25rem){
@@ -645,4 +664,7 @@ textarea{
     .review:nth-of-type(1), .review:nth-of-type(2), .review:nth-of-type(3), .review:nth-of-type(4), .review:nth-of-type(5), .review:nth-of-type(6){
         display: block;
     }
+
+
+
 }

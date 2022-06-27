@@ -33,7 +33,7 @@
                     <ul id="menuItems">
                         <li><a href="#search">Search</a></li>
                         <li><a href="#categories">Categories</a></li>
-                        <li><a class="cta" href="">Contact</a></li>
+                        <li><a class="cta" href="contact.php">Contact</a></li>
                     </ul>
                 </nav>
 
@@ -45,7 +45,7 @@
                     <h1>Find the perfect person, <br> for your business!</h1>
                     <p>OpenHire aims to make it easier for businesses to look for freelancers they can hire for their
                         projects</p>
-                    <a href="" class="btn">Explore Now &#8594;</a>
+                    <a href="#devs" class="btn">Explore Now &#8594;</a>
                 </div>
                 <div class="col-2"><img src="img/laptop.png" alt=""></div>
             </div>
@@ -144,7 +144,7 @@
                     <button class="arrow">></button>
         </section>
         <!--Programmers-->
-        <div class="title_padding"><h2 class="titel">Our top Developpers</h2></div>
+        <div class="title_padding"><h2 id="devs" class="titel">Our top Developpers</h2></div>
         
         <div class="inputs">
             <div>
@@ -167,8 +167,8 @@
 
         <section class="small-container">
             <div class="row">
-                <div data-category="Logo-design" class="col-4">
-                    <a href="Dion.html" target="_blank">
+                <div data-category="Logo-design" class="col-4 ">
+                    <a href="Dion.html" target="_blank" >
                         <img src="img/Dion.webp" class="img_dev"  alt="">
                         <div class="cat-2">
                             <h3>Dion ahiyabor</h3>
@@ -177,8 +177,8 @@
                     </a>
 
                 </div>
-                <div data-category="front-end" class="col-4">
-                    <a href="Bilal.html" target="_blank">
+                <div data-category="front-end" class="col-4 ">
+                    <a href="Bilal.html" target="_blank" >
                         <img src="img/Bilal.webp" class="img_dev" alt="">
                         <div class="cat-2">
                             <h3>Bilal el Koudadi</h3>
@@ -193,7 +193,8 @@
         <section id="search" class="offer">
             <div class="small-container">
             <div class="speech"> 
-                <button id="button1" onclick="startRecognition()">🎤</button>
+                <h3>Have a question, simply ask by clicking the button &#8594;</h3>
+                <button class="button" id="button1" onclick="startRecognition()">🎤</button>
                 <div id="result" class="hide"></div>
                 <div><img id="image1" class="hide"></div>
             </div>
@@ -211,7 +212,7 @@
                             <i class="fa fa-quote-left"></i>
                             <p class="text"><?php echo $row['beschrijving'] ?></p>
                             
-                            <figure class="programmers-img" style="background-image: url(/f2m4WEB-SHOP/Web-shop/img/<?php echo $row['foto'];?>)" > </figure>
+                            <figure class="programmers-img" style="background-image: url(img/<?php echo $row['foto'];?>)" > </figure>
                             <h3><?php echo $row['titel']?></h3>
                             <a target="blanck" href="details.php?id=<?php echo $row['id']; ?>" class="btn">More info</a>
                         </div>
@@ -264,6 +265,7 @@
             <a href="#">contact</a>
           </li>  
         </ul>
+        <hr>
         <p class="copyright"> Dion Ahiayibor & Bilal el Koudadi @ 2022</p>
     </footer>
 

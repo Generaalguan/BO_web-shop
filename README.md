@@ -4,7 +4,7 @@
 
 
 
-## [link naar site](http://33372.hosts1.ma-cloud.nl/Web-shop/)
+## [link naar site](http://33372.hosts1.ma-cloud.nl/M2F4/Web-Shop/index.php)
 
 ## [Database ](docs/openhire.pdf)
 
